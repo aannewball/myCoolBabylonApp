@@ -23,6 +23,9 @@
         <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
         <script src="https://cdn.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
 
+
+
+
         <style>
             html, body {
                 overflow: hidden;
@@ -90,6 +93,14 @@
         newMeshes[0].scaling = new BABYLON.Vector3(0.1, 0.1, 0.1);
     
     });
+
+    BABYLON.SceneLoader.ImportMeshAsync("", "https://aannewball.github.io/myCoolBabylonApp/", "mico.glb").then((result) => {
+    	result.meshes[1].position.x = 2;
+    	const myMesh1 = scene.getMeshByName("myMesh_1");
+    	myMesh1.rotation.y = Math.PI / 2;
+    });
+
+    BABYLON.SceneLoader.ImportMeshAsync("semi_house", "https://assets.babylonjs.com/meshes/", "both_houses_scene.babylon");
 
 
 
