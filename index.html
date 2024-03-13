@@ -79,6 +79,9 @@
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 0.7;
 
+    const roofMat = new BABYLON.StandardMaterial("roofMat");
+    roofMat.diffuseTexture = new BABYLON.Texture("https://assets.babylonjs.com/environments/roof.jpg", scene);
+
 
     
     // Our built-in 'ground' shape.
@@ -98,6 +101,7 @@
     	result.meshes[1].position.x = 2;
     	const myMesh1 = scene.getMeshByName("myMesh_1");
     	myMesh1.rotation.y = Math.PI / 2;
+        myMesh1.material=roofMat; 
     });
 
     BABYLON.SceneLoader.ImportMeshAsync("semi_house", "https://assets.babylonjs.com/meshes/", "both_houses_scene.babylon");
