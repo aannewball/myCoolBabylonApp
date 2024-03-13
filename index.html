@@ -94,7 +94,7 @@
     
     });
 
-    BABYLON.SceneLoader.ImportMeshAsync("", "https://aannewball.github.io/myCoolBabylonApp/", "mico.glb").then((result) => {
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "mico.glb").then((result) => {
     	result.meshes[1].position.x = 2;
     	const myMesh1 = scene.getMeshByName("myMesh_1");
     	myMesh1.rotation.y = Math.PI / 2;
