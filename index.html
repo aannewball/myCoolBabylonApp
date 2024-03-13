@@ -101,7 +101,7 @@
     	result.meshes[1].position.x = 2;
     	const myMesh1 = scene.getMeshByName("myMesh_1");
     	myMesh1.rotation.y = Math.PI / 2;
-        myMesh.material = ground;
+        myMesh.material = ground.material;
     });
 
     BABYLON.SceneLoader.ImportMeshAsync("semi_house", "https://assets.babylonjs.com/meshes/", "both_houses_scene.babylon");
