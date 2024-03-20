@@ -97,14 +97,14 @@
     
     });
 
-    BABYLON.SceneLoader.ImportMeshAsync("", "https://github.com/aannewball/myCoolBabylonApp/", "mico.glb").then((result) => {
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "mico.glb").then((result) => {
     	result.meshes[1].position.x = 4;
         result.meshes[1].material = roofMat;
         result.meshes[1].rotation.x = Math.PI / 3;
 
     });
 
-    BABYLON.SceneLoader.ImportMeshAsync("", "https://github.com/aannewball/myCoolBabylonApp/", "Vase_Clay.glb").then((result) => {
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "Vase_Clay.glb").then((result) => {
     	result.meshes[2].position.x = 1;
         result.meshes[2].material = roofMat;
         result.meshes[2].rotation.x = Math.PI / 3;
