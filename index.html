@@ -101,9 +101,14 @@
     	result.meshes[1].position.x = 4;
         result.meshes[1].material = roofMat;
         result.meshes[1].rotation.x = Math.PI / 3;
-    	//const myMesh1 = scene.getMeshByName("myMesh_1");
-    	//myMesh1.rotation.y = Math.PI / 2;
-        //myMesh1.material = roofMat;
+
+    });
+
+    BABYLON.SceneLoader.ImportMeshAsync("", "./", "Vase_Clay.glb").then((result) => {
+    	result.meshes[2].position.x = 4;
+        result.meshes[2].material = roofMat;
+        result.meshes[2].rotation.x = Math.PI / 3;
+  
     });
 
 
