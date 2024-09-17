@@ -97,7 +97,7 @@
     
     });
 
-    BABYLON.SceneLoader.ImportMeshAsync("", "https://aannewball.github.io/myCoolBabylonApp/", "mico.glb").then((result) => {
+    BABYLON.SceneLoader.ImportMeshAsync("", "https://aannewball.github.io/myCoolBabylonApp/", "Bruja.glb").then((result) => {
     	result.meshes[1].position.x = 4;
         result.meshes[1].material = roofMat;
         result.meshes[1].rotate  = new BABYLON.Vector3(0, 45, 0);
@@ -107,7 +107,7 @@
 
     });
 
-    BABYLON.SceneLoader.ImportMeshAsync("", "https://aannewball.github.io/myCoolBabylonApp/", "Vase_Clay.glb").then((result) => {
+    BABYLON.SceneLoader.ImportMeshAsync("", "https://aannewball.github.io/myCoolBabylonApp/", "casita.glb").then((result) => {
     	result.meshes[1].position.x = 1;
         result.meshes[1].rotation.x = BABYLON.Tools.ToRadians(45);;
         result.meshes[1].material = mat1;
